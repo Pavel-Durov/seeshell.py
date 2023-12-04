@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "project-template-py"
+version = "0.1.0"
+description = "Python project template"
+authors = ["Pavel Durov <pavel@p3ld3v.dev>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+black = "^23.11.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.3"
+
+[tool.black]
+line-length = 119
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
